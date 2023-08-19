@@ -85,6 +85,7 @@
     width: 25px;
     height: 4px;
     background-color: #FFF;
+    margin-bottom: -4px;
     transition: all 0.3s;
 }
 
@@ -109,6 +110,9 @@
         flex-direction: column;
         gap: 1px;
         background-color: #FC0;
+
+        animation:  backInRight;
+        animation-duration: 500ms;
     }
 
     .nav__link {
