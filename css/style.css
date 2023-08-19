@@ -1,0 +1,17 @@
+@import url('./fonts.css');
+@import url('./header.css');
+@import url('./greetings.css');
+@import url('./categories.css');
+@import url('./benefit.css');
+@import url('./find.css');
+@import url('./deliveri.css');
+@import url('./team.css');
+@import url('./discount.css');
+@import url('./sponsors.css');
+@import url('./footer.css');
+
+.container {
+    max-width: 1205px;
+    margin: auto;
+}
+

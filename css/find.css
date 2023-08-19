@@ -1,0 +1,123 @@
+.find {
+    background-color: #F5F5F5;
+}
+
+.find__top {
+    padding-top: 75px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.find__top-suptitle {
+    color: #FC0;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.find__top-title {
+    color:  #231900;
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.find__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.find__row_item {
+    text-align: center;
+}
+
+.find__row_item-img {
+    margin-bottom: 20px;
+}
+
+.find__row_item-location {
+    margin-bottom: 15px;
+}
+
+.find__row_item-title {
+    max-width: 380px;
+    color:  #231900;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+@media (max-width: 1205px) {
+    .find__wrap {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .find__row {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'block1     block2'
+        'block3     block3'
+        ;
+    }
+
+    .find__row_item {
+        max-width: 380px;
+        margin: auto;
+    }
+
+    .find__row_item:nth-child(1) {
+        grid-area: block1;
+    }
+
+    .find__row_item:nth-child(2) {
+        grid-area: block2;
+    }
+
+    .find__row_item:nth-child(3) {
+        grid-area: block3;
+    }
+}
+
+@media (max-width: 810px) {
+    .find__row {
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .find__top-suptitle {
+        font-size: 14px;
+    }
+
+
+    .find__top-title {
+        font-size: 34px;
+    }
+
+    .find__row_item-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 440px) {
+    .find__row_item-img {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .find__row_item-title {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,143 @@
+.header {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: none;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.header__logo-link {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+
+    
+    display: inline-block;
+    margin: 0 0.5rem;
+    
+    animation: backInDown;
+    animation-duration: 0.9s;
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav__link {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header__btn {
+    padding: 15px 40px;
+    background: #FC0;
+}
+
+.header__btn-link {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.burger {
+    display: none;
+    transition: all 0.3s;
+}
+
+.line1 {
+    width: 25px;
+    height: 4px;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.line2 {
+    width: 25px;
+    height: 4px;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.line3 {
+    width: 25px;
+    height: 4px;
+    background-color: #FFF;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1205px) {
+    .header__wrap {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 895px) {
+    .nav {
+        display: none;
+    }
+
+    .nav--active {
+        width: 180px;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        background-color: #FC0;
+    }
+
+    .nav__link {
+        border: 3px solid #FFF;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger_line1--active {
+        display: none;
+    }
+
+    .burger_line2--active {
+        transform: rotate(-50deg);
+    }
+
+    .burger_line3--active {
+        transform: rotate(50deg);
+        margin-top: -8px;
+    }
+}
+
+@media (max-width: 475px) {
+    .header__btn {
+        display: none;
+    }
+}

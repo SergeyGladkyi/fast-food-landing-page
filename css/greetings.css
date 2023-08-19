@@ -1,0 +1,138 @@
+.greetings {
+    background: url('../img/greetings_background.png');
+    background-size: cover;
+    min-height: 890px;
+    padding-top: 190px;
+    z-index: 1;
+}
+
+.greetings__suptitle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.greetings__title {
+    max-width: 806px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.greetings__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 95px;
+}
+
+.greetings__item_sale {
+    text-align: center;
+    width: 205px;
+    height: 205px;
+    background-color: #FC0;
+    border-radius: 50%;
+
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.greetings__item_sale-procent {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    font-size: 63.896px;
+    font-weight: 700;
+    color: #FFF;
+    
+}
+
+.greetings__item_sale-subtitle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 31.948px;
+    font-weight: 700;
+}
+
+.greetings__sale-subtitle {
+    max-width: 325px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.greetings__btn {
+    background-color: #FC0;
+    padding: 15px 40px;
+}
+
+.greetings__btn-link {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 1205px) {
+    .greetings__wrap {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .greetings {
+        background: url('../img/greetings_background_adptive3.jpg');
+        background-size: cover;
+    }
+}
+
+@media (max-width: 620px) {
+    .greetings__item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .greetings {
+        padding-top: 140px;
+    }
+
+    .greetings__suptitle {
+        font-size: 18px;
+    }
+
+    .greetings__title {
+        font-size: 34px;
+    }
+
+    .greetings__sale-subtitle {
+        font-size: 24px;
+    }
+
+    .greetings__item_sale {
+        width: 185px;
+        height: 185px;
+    }
+
+    .greetings__item_sale-procent {
+        margin-top: 55px;
+        font-size: 44px;
+    }
+
+    .greetings__item_sale-subtitle {
+        font-size: 24px;
+    }
+
+    .greetings__wrap-button {
+        text-align: center;
+    }
+}

@@ -1,0 +1,35 @@
+.sponsors__wrap {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.sponsors__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1285px) {
+    .sponsors__wrap {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .sponsors__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .sponsors__item {
+        margin: auto; 
+    }
+}
+
+@media (max-width: 645px) {
+    .sponsors__item-img {
+        width: 100%;
+    }
+}
